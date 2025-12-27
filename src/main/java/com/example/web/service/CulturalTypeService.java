@@ -5,6 +5,7 @@ import com.example.web.dto.CulturalTypeDto;
 import com.example.web.dto.query.CulturalTypePagedInput;
 import com.example.web.entity.CulturalType;
 import com.example.web.tools.dto.IdInput;
+import com.example.web.tools.dto.IdsInput;
 import com.example.web.tools.dto.PagedResult;
 
 /**
