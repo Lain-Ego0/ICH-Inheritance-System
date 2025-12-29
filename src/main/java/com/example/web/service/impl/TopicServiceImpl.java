@@ -684,7 +684,7 @@ public class TopicServiceImpl extends ServiceImpl<TopicMapper, Topic> implements
     /**
      * 根据话题ID推荐相似内容的话题
      *
-     * @param topicId 话题ID
+     * @param input 话题ID
      * @return 相似话题的分页结果
      */
     @SneakyThrows
