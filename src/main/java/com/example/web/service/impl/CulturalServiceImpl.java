@@ -48,14 +48,7 @@ public class CulturalServiceImpl extends ServiceImpl<CulturalMapper, Cultural> i
     @Autowired
     private CulturalTypeMapper CulturalTypeMapper;
 
-    @Autowired
-    private VideoExhibitionTypeMapper VideoExhibitionTypeMapper;
 
-    @Autowired
-    private VideoExhibitionCollectMapper VideoExhibitionCollectMapper;
-
-    @Autowired
-    private VideoExhibitionMapper VideoExhibitionMapper;
 
     /**
      * 构建表查询sql

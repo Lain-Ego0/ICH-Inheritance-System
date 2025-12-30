@@ -1,9 +1,6 @@
 package com.example.web.controller;
 
-import com.example.web.enums.OrderReturnTypeEnum;
-import com.example.web.enums.OrderStatusEnum;
-import com.example.web.enums.RoleTypeEnum;
-import com.example.web.enums.ShopAuditStatusEnum;
+import com.example.web.enums.*;
 import com.example.web.tools.dto.PagedResult;
 import com.example.web.tools.dto.SelectResult;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -62,23 +59,6 @@ public class SelectController {
        var rs=Arrays.stream(OrderReturnTypeEnum.values()).map(n->new SelectResult(n.toString(),n.name(),Integer.toString(n.index()),"")).toList();
        return PagedResult.GetInstance(rs,rs.stream().count());
     }
-    /**
-     *活动状态枚举接口
-     */
-    @RequestMapping(value = "/ActivityStatusEnum", method = RequestMethod.POST)
-    public PagedResult<SelectResult> ActivityStatusEnum() {
 
-        var rs=Arrays.stream(ActivityStatusEnum.values()).map(n->new SelectResult(n.toString(),n.name(),Integer.toString(n.index()),"")).toList();
-        return PagedResult.GetInstance(rs,rs.stream().count());
-    }
-    /**
-     *活动审核状态枚举接口
-     */
-    @RequestMapping(value = "/ActivityAuditStatusEnum", method = RequestMethod.POST)
-    public PagedResult<SelectResult> ActivityAuditStatusEnum() {
 
-        var rs=Arrays.stream(ActivityAuditStatusEnum.values()).map(n->new SelectResult(n.toString(),n.name(),Integer.toString(n.index()),"")).toList();
-        return PagedResult.GetInstance(rs,rs.stream().count());
-    }
-    
 }
