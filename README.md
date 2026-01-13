@@ -41,3 +41,7 @@
 3. 提交修改（`git commit -m 'feat: 新增XXX功能'`）
 4. 推送到分支（`git push origin feature/your-feature`）
 5. 发起Pull Request
+
+CREATE DATABASE IF NOT EXISTS feiyixitong 
+DEFAULT CHARACTER SET utf8mb4 
+COLLATE utf8mb4_unicode_ci;

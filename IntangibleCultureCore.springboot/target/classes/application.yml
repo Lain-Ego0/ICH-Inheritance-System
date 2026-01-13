@@ -21,7 +21,7 @@ spring:
       max-file-size: 10024MB #上传的文件最大限制
   datasource: #数据库的配置
     username: root #数据库的账号
-    password: Yg@7244204480506 #数据库的密码
+    password: 23456789 #数据库的密码
     url: jdbc:mysql://localhost:3306/feiyixitong?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf8&allowPublicKeyRetrieval=true
     driver-class-name: com.mysql.cj.jdbc.Driver #显式指定MySQL驱动（关键！）
     # 数据库连接池配置（解决连接超时/不稳定问题）

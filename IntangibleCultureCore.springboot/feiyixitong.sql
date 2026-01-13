@@ -14,6 +14,12 @@
  Date: 02/01/2026 15:38:52
 */
 
+-- ================ 必加的两行核心命令 ================
+CREATE DATABASE IF NOT EXISTS feiyixitong DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE feiyixitong;
+/*指定并使用数据库*/
+-- ==================================================
+
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
