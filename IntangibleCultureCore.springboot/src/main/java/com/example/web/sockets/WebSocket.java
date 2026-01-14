@@ -36,15 +36,13 @@ public class WebSocket {
     private Session session;
 
 
-   
-
 
     //新增一个方法用于主动向客户端发送消息
     public static void sendMessage(String message, String userId) {
         WebSocket webSocket = webSocketMap.get(userId);
         if (webSocket != null) {
             try {
-
+//核心API
                 webSocket.session.getBasicRemote().sendText(message);
                 System.out.println("【websocket消息】发送消息成功,目标用户id=" + userId + ",消息内容：" + message);
             } catch (IOException e) {
@@ -55,7 +53,7 @@ public class WebSocket {
         }
     }
 
-
+//生命周期
     //前端请求时一个websocket时
     @OnOpen
     public void onOpen(Session session, @PathParam("userId") String userId) {
@@ -78,7 +76,7 @@ public class WebSocket {
         error.printStackTrace();
     }
 
-    //前端向后端发送消息
+    //前端向后端发送消息 业务核心（前端-后端）
     @OnMessage
     public void onMessage(String message) throws JsonProcessingException {
 
